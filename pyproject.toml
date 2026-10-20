@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envcensus"
+version = "0.1.0"
+description = "Audit environment variables referenced in code against .env and .env.example files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+envcensus = "envcensus:main"
